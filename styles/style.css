@@ -1,0 +1,12 @@
+@import url('color.css');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: var(--cor-cinza-escuro);
+}
