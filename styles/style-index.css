@@ -1,0 +1,97 @@
+@import url('color.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+
+    background-color: var(--cor-bege-claro);
+}
+
+
+
+.header_contacts {
+    background-color: var(--cor-cinza-escuro);
+}
+
+.header_div {
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.header_div__contacts {
+
+    display: flex;
+    gap: 10px;
+
+
+
+}
+
+.header_div__contacts a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--cor-bege-suave);
+}
+
+.header_link {}
+
+.header_div img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.header_div__socials {
+    display: flex;
+    gap: 20px;
+}
+
+
+.header_nav {
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+}
+
+.nav_list {
+    display: flex;
+    gap: 20px;
+
+}
+
+
+
+.header_nav li,
+a {
+
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+.header_banner {
+    height: 400px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../src/assets/images/cockpit\ na\ net\ renault\ Zoe\ ZE.jpg") center / cover no-repeat;
+}
