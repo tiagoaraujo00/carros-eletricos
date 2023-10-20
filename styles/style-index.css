@@ -26,7 +26,8 @@
     font-size: 1rem;
     justify-content: space-between;
     align-items: center;
-
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
 
 }
 
@@ -35,7 +36,8 @@
 
     display: flex;
     gap: 10px;
-
+    justify-content: center;
+    align-items: center;
 
 
 }
@@ -46,7 +48,6 @@
     color: var(--cor-bege-suave);
 }
 
-.header_link {}
 
 .header_div img {
     width: 25px;
@@ -77,21 +78,369 @@
 .nav_list {
     display: flex;
     gap: 20px;
+}
 
+
+.header_nav a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--cor-cinza-escuro);
 }
 
 
 
-.header_nav li,
-a {
+.header_nav li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 5px;
 
     list-style: none;
     text-decoration: none;
+    position: relative;
+}
+
+
+.header_nav a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--cor-verde-claro);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
 
 
+
+.header_nav a:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+.header_form {
+    display: flex;
+
+}
+
+.header_form__input {
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    padding: 8px;
+    border-start-start-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--cor-cinza-claro);
+}
+
+.header_form__input {
+    outline: none
+}
+
+.header_form__button {
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-end-end-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: var(--cor-cinza-claro);
+
+}
+
+.header_form__button img {
+
+    width: 20px;
+}
+
+
 .header_banner {
+    position: relative;
     height: 400px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../src/assets/images/cockpit\ na\ net\ renault\ Zoe\ ZE.jpg") center / cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../src/assets/images/pexels-garvin-st-villier-14277561.jpg") center / cover no-repeat;
+}
+
+
+.header_banner__div {
+    position: absolute;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+
+.header_banner__title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+    font-size: 2.5rem;
+    color: var(--cor-bege-claro);
+}
+
+
+.header_banner__paragraph {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--cor-bege-claro);
+    overflow-wrap: break-word;
+}
+
+
+
+.card {
+    background-color: var(--cor-cinza-escuro);
+
+}
+
+.card_container {
+    box-sizing: border-box;
+    max-width: 1400px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+
+
+}
+
+.card_container__cars {
+    cursor: pointer;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    width: 450px;
+    height: 400px;
+    background-color: var(--cor-bege-claro);
+    border-radius: 8px;
+    transition: tranforme 0.9s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+
+}
+
+
+
+.card_container__cars:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.card_container__carsImg {
+    padding: 5px;
+    border-radius: 15px;
+    width: 450px;
+}
+
+
+.card_container__carsTitle {
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    color: var(--cor-cinza-escuro);
+}
+
+.card_container__carsDescription {
+    font-family: 'Nunito', sans-serif;
+    padding: 5px 10px;
+    width: 450px;
+    color: var(--cor-cinza-escuro);
+}
+
+
+.card_video {
+    overflow: hidden;
+
+}
+
+.card_video__video {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+.card_text {
+    height: 200px;
+    background-color: var(--cor-bege-claro);
+}
+
+.card_container__text {
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: var(--cor-cinza-escuro);
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.card_text__title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 100px;
+}
+
+.card_text__paragraph {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+
+
+
+.card_infos {
+    display: flex;
+
+    justify-content: space-around;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+    margin-bottom: 100px;
+}
+
+.card_infos__text {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+
+    color: var(--cor-cinza-escuro);
+
+
+}
+
+.card_infos__text h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+}
+
+.card_infos__text h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+
+.card_infos__text p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.card_infos__text span {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+
+}
+
+
+
+
+
+
+
+
+.card_photo {
+    color: var(--cor-cinza-escuro);
+    margin-top: 50px;
+    overflow: hidden;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.card_photo img {
+    width: 100%;
+
+}
+
+
+
+.card_contacts {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+
+}
+
+
+.card_contacts__info {
+    margin-left: 50px;
+    align-self: center;
+
+
+}
+
+
+.card_contacts__text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+
+.card_contacts__button {
+    border: none;
+    cursor: pointer;
+    color: var(--cor-bege-claro);
+    font-size: 1rem;
+    padding: 20px 40px;
+    background-color: var(--cor-cinza-escuro);
+    transition: tranforme 0.5s ease-in-out;
+}
+
+
+
+.card_contacts__button:hover {
+    color: var(--cor-cinza-escuro);
+    background-color: var(--cor-cinza-claro);
+}
+
+
+
+.card_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_button button {
+    cursor: pointer;
+    text-align: center;
+    color: var(--cor-cinza-escuro);
+    border: none;
+    font-size: 1rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px 40px;
+
+}
+
+
+.footer {
+    background-color: var(--cor-cinza-claro);
+}
+
+
+
+
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
 }

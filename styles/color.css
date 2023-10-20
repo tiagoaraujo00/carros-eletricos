@@ -1,4 +1,6 @@
 :root {
+
+    --cor-cinza-claro: #e4e4e4;
     --cor-cinza-escuro: #474747;
     /* Cinza Escuro */
     --cor-bege-claro: #F9F9F7;
@@ -13,4 +15,5 @@
     /* Bege Suave */
     --cor-verde: #6EAA5E;
     /* Verde */
+
 }
