@@ -1,1 +1,1 @@
-Primeiro projeto em grupo da Ata Tech | Vem ser Front - Ifood
+Primeiro projeto em grupo da Ada Tech | Vem ser Front - Ifood
