@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .header {
@@ -81,6 +82,7 @@
 }
 
 
+
 .header_nav a {
     list-style: none;
     text-decoration: none;
@@ -120,6 +122,11 @@
     transform: scaleX(1);
 }
 
+
+.menu-toggle,
+.menu-toggle2 {
+    display: none;
+}
 
 
 .header_form {
@@ -373,6 +380,11 @@
     transform: translateY(50px);
     transition: opacity 0.5s, transform 0.5s;
 
+
+}
+
+.card_contacts__photo {
+    overflow: hidden;
 }
 
 
@@ -531,7 +543,76 @@
 
 
 
+
+
+
+
+
+@media(max-width: 1400px) {
+
+    .header_div {
+        justify-content: space-around;
+    }
+
+    .header_nav {
+        justify-content: space-around;
+    }
+
+    .header_banner__div {
+        margin-left: 50px;
+    }
+
+    .header_banner__title {
+        text-align: start;
+    }
+
+
+    .card_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_container__cars {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 700px;
+        height: 550px;
+    }
+
+    .card_container__carsImg,
+    .card_container__carsTitle,
+    .card_container__carsDescription {
+        width: 700px;
+    }
+
+
+    .card_container__text {
+        margin-right: 50px;
+
+        margin-left: 50px;
+        justify-content: space-around;
+    }
+
+
+    .container_footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+
+
+
+
 @media(max-width: 1000px) {
+
+
+
+    .logo {
+        width: 150px;
+    }
+
     .header_form__input {
         display: none;
     }
@@ -539,4 +620,198 @@
     .header_form__button {
         display: none;
     }
+}
+
+
+
+
+
+
+
+/* estilo menu hamburguer */
+@media (max-width: 768px) {
+
+    .header_div {
+        display: none;
+
+    }
+
+
+    .header_nav {
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+
+
+    .menu-toggle {
+        margin-left: 100px;
+    }
+
+    .menu-toggle,
+    .menu-toggle2 {
+
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .menu-toggle2.active {
+        color: var(--cor-bege-claro);
+        background: none;
+        border: none;
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+
+
+    .nav_list.active {
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 41.15%, rgba(0, 0, 0, 0.5) 100%), url("../src/assets/images/pexels-erik-mclean-5158167.jpg") center / cover no-repeat;
+
+
+    }
+
+
+
+    .nav_list a {
+
+        color: aliceblue;
+    }
+
+
+
+
+
+    .menu-toggle.active {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: initial;
+    }
+
+
+    .menu-toggle.active+.nav_list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--cor-cinza-escuro);
+        margin-top: 213.47px;
+        z-index: 999;
+
+    }
+
+    .menu-toggle {
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+
+
+
+
+    .header_banner__div {
+        margin-left: 0;
+        text-align: center;
+    }
+
+
+    .header_banner__title {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .header_banner__paragraph {
+        font-size: 1rem;
+    }
+
+
+    .card_container__cars {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 300px;
+        height: 290px;
+    }
+
+
+    .card_container__carsImg,
+    .card_container__carsTitle,
+    .card_container__carsDescription {
+
+        width: 300px;
+    }
+
+    .card_container__carsTitle {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .card_container__carsDescription {
+        padding: 0px 10px;
+        font-size: 0.8rem;
+    }
+
+    .card_text__title {
+        margin-top: 30px;
+        font-size: 2rem;
+    }
+
+    .card_text__paragraph {
+        font-size: 1rem;
+    }
+
+    .card_infos {
+        border-bottom: 2px solid var(--cor-cinza-escuro);
+        border-top: 2px solid var(--cor-cinza-escuro);
+        margin-top: 150px;
+        flex-direction: column;
+    }
+
+    .card_infos__text {
+        border-bottom: 1px solid var(--cor-cinza-escuro);
+    }
+
+    .card_infos__text p {
+        margin-bottom: 10px;
+    }
+
+
+    .card_contacts__info {
+        position: absolute;
+
+        margin: 0 20px;
+    }
+
+    .card_contacts__text {
+        color: var(--cor-bege-claro);
+        font-size: 2rem;
+    }
+
+    .card_contacts__button {
+        position: relative;
+        margin: 0px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .card_contacts__photo {
+        margin-top: 100px;
+    }
+
+    .container_footer__logo img {
+        width: 200px;
+    }
+
+
 }

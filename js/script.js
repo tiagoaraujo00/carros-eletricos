@@ -18,7 +18,7 @@ window.addEventListener("scroll", verificaPosicao);
 
 
 
-
+// Animação da página
 const elementos = document.querySelectorAll(".animacao");
 
 window.addEventListener("scroll", () => {
@@ -31,3 +31,38 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+
+
+// menu hamburguer 
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menuToggle');
+    const menuToggle2 = document.getElementById('menuToggle2');
+    const navList = document.querySelector('.nav_list');
+
+
+    menuToggle.addEventListener('click', function () {
+        menuToggle.classList.toggle('active');
+        menuToggle2.classList.toggle('active')
+        navList.classList.toggle('active');
+    });
+
+
+    menuToggle2.addEventListener('click', () => {
+        navList.classList.toggle('active')
+        menuToggle.classList.toggle('active');
+        menuToggle2.classList.toggle('active')
+
+
+    })
+
+
+});
+
+
+
+
+
+
+
+
