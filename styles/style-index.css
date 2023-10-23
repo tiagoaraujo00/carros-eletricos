@@ -1,819 +1,681 @@
-@import url('color.css');
+@import url("color.css");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
-
-    background-color: var(--cor-bege-claro);
+  background-color: var(--cor-bege-claro);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .header_contacts {
-    background-color: var(--cor-cinza-escuro);
+  background-color: var(--cor-cinza-escuro);
 }
 
 .header_div {
-    box-sizing: border-box;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 5px;
-    display: flex;
-    font-size: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200;
-
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
 }
 
-
 .header_div__contacts {
-
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-
-
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .header_div__contacts a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: var(--cor-bege-suave);
+  margin-right: 15px;
+  text-decoration: none;
+  color: var(--cor-bege-suave);
 }
-
 
 .header_div img {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
-
 
 .header_div__socials {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
-
 .header_nav {
-    box-sizing: border-box;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    width: 300px;
+  width: 300px;
 }
 
 .nav_list {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
-
-
 
 .header_nav a {
-    list-style: none;
-    text-decoration: none;
-    color: var(--cor-cinza-escuro);
+  list-style: none;
+  text-decoration: none;
+  color: var(--cor-cinza-escuro);
 }
-
-
 
 .header_nav li {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 5px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 5px;
 
-    list-style: none;
-    text-decoration: none;
-    position: relative;
+  list-style: none;
+  text-decoration: none;
+  position: relative;
 }
-
 
 .header_nav a::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--cor-verde-claro);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--cor-verde-claro);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
-
-
-
 
 .header_nav a:hover::before {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
-
 
 .menu-toggle,
 .menu-toggle2 {
-    display: none;
+  display: none;
 }
 
-
 .header_form {
-    display: flex;
-
+  display: flex;
 }
 
 .header_form__input {
-    font-family: 'Nunito', sans-serif;
-    border: none;
-    padding: 8px;
-    border-start-start-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: var(--cor-cinza-claro);
-    outline: none
+  font-family: "Nunito", sans-serif;
+  border: none;
+  padding: 8px;
+  border-start-start-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: var(--cor-cinza-claro);
+  outline: none;
 }
 
-
-
 .header_form__button {
-    justify-content: center;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    border-end-end-radius: 15px;
-    border-top-right-radius: 15px;
-    background-color: var(--cor-cinza-claro);
-
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-end-end-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: var(--cor-cinza-claro);
 }
 
 .header_form__button img {
-
-    width: 20px;
+  width: 20px;
 }
-
 
 .header_banner {
-    position: relative;
-    height: 400px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../src/assets/images/pexels-garvin-st-villier-14277561.jpg") center / cover no-repeat;
+  position: relative;
+  height: 400px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 41.15%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../src/assets/images/pexels-garvin-st-villier-14277561.jpg") center /
+      cover no-repeat;
 }
-
 
 .header_banner__div {
-    position: absolute;
-    box-sizing: border-box;
-    max-width: 1400px;
-    margin-left: 200px;
-    margin-top: 200px;
+  position: absolute;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin-left: 200px;
+  margin-top: 200px;
 }
-
 
 .header_banner__title {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 1000;
-    font-size: 2.5rem;
-    color: var(--cor-bege-claro);
+  font-family: "Nunito", sans-serif;
+  font-weight: 1000;
+  font-size: 2.5rem;
+  color: var(--cor-bege-claro);
 }
-
 
 .header_banner__paragraph {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--cor-bege-claro);
-    overflow-wrap: break-word;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--cor-bege-claro);
+  overflow-wrap: break-word;
 }
 
-
-
 .card {
-    background-color: var(--cor-cinza-escuro);
-
+  background-color: var(--cor-cinza-escuro);
 }
 
 .card_container {
-    box-sizing: border-box;
-    max-width: 1400px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-
-
+  box-sizing: border-box;
+  max-width: 1400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
 }
 
 .card_container__cars {
-    cursor: pointer;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    overflow: hidden;
-    width: 450px;
-    height: 400px;
-    background-color: var(--cor-bege-claro);
-    border-radius: 8px;
-    transition: tranforme 0.9s cubic-bezier(0.175, 0.885, 0.320, 1.275);
-
-
+  cursor: pointer;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  width: 450px;
+  height: 400px;
+  background-color: var(--cor-bege-claro);
+  border-radius: 8px;
+  transition: tranforme 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-
-
 .card_container__cars:hover {
-    transform: scale(1.05);
-    opacity: 0.8;
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .card_container__carsImg {
-    padding: 5px;
-    border-radius: 15px;
-    width: 450px;
+  padding: 5px;
+  border-radius: 15px;
+  width: 450px;
 }
 
-
 .card_container__carsTitle {
-    font-family: 'Nunito', sans-serif;
-    padding: 10px;
-    color: var(--cor-cinza-escuro);
+  font-family: "Nunito", sans-serif;
+  padding: 10px;
+  color: var(--cor-cinza-escuro);
 }
 
 .card_container__carsDescription {
-    font-family: 'Nunito', sans-serif;
-    padding: 5px 10px;
-    width: 450px;
-    color: var(--cor-cinza-escuro);
+  font-family: "Nunito", sans-serif;
+  padding: 5px 10px;
+  width: 450px;
+  color: var(--cor-cinza-escuro);
 }
 
-
 .card_video {
-    overflow: hidden;
-
+  overflow: hidden;
 }
 
 .card_video__video {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    width: 100%;
+  width: 100%;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
-
 .card_text {
-    height: 200px;
-    background-color: var(--cor-bege-claro);
+  height: 200px;
+  background-color: var(--cor-bege-claro);
 }
 
 .card_container__text {
-    box-sizing: border-box;
-    max-width: 1400px;
-    margin: 0 auto;
-    color: var(--cor-cinza-escuro);
-    transform: translateY(50px);
-    transition: opacity 0.5s, transform 0.5s;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: var(--cor-cinza-escuro);
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .card_text__title {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    font-size: 3rem;
-    margin-top: 100px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 100px;
 }
 
 .card_text__paragraph {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 100;
-    font-size: 1.2rem;
-    margin-top: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
-
-
-
-
 .card_infos {
-    display: flex;
+  display: flex;
 
-    justify-content: space-around;
-    transform: translateY(50px);
-    transition: opacity 0.5s, transform 0.5s;
-    margin-bottom: 100px;
+  justify-content: space-around;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+  margin-bottom: 100px;
 }
 
 .card_infos__text {
-    position: relative;
-    text-align: center;
-    margin-top: 30px;
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
 
-    color: var(--cor-cinza-escuro);
-
-
+  color: var(--cor-cinza-escuro);
 }
 
 .card_infos__text h2 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    margin-bottom: 10px;
-
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .card_infos__text h4 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    margin-bottom: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
-
 .card_infos__text p {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .card_infos__text span {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 100;
-    font-size: 1rem;
-
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
 }
 
-
-
-
-
-
-
-
 .card_photo {
-    color: var(--cor-cinza-escuro);
-    margin-top: 50px;
-    overflow: hidden;
-    transform: translateY(50px);
-    transition: opacity 0.5s, transform 0.5s;
+  color: var(--cor-cinza-escuro);
+  margin-top: 50px;
+  overflow: hidden;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .card_photo img {
-    width: 100%;
-
+  width: 100%;
 }
 
-
-
 .card_contacts {
-    display: flex;
-    box-sizing: border-box;
-    max-width: 1400px;
-    margin: 0 auto;
-    transform: translateY(50px);
-    transition: opacity 0.5s, transform 0.5s;
-
-
+  display: flex;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .card_contacts__photo {
-    overflow: hidden;
+  overflow: hidden;
 }
-
 
 .card_contacts__info {
-    margin-left: 50px;
-    align-self: center;
-
-
+  margin-left: 50px;
+  align-self: center;
 }
-
 
 .card_contacts__text {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    margin-bottom: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
-
 
 .card_contacts__button {
-    border: none;
-    cursor: pointer;
-    color: var(--cor-bege-claro);
-    font-size: 1rem;
-    padding: 20px 40px;
-    background-color: var(--cor-cinza-escuro);
-    transition: tranforme 0.5s ease-in-out;
+  border: none;
+  cursor: pointer;
+  color: var(--cor-bege-claro);
+  font-size: 1rem;
+  padding: 20px 40px;
+  background-color: var(--cor-cinza-escuro);
+  transition: tranforme 0.5s ease-in-out;
 }
-
-
 
 .card_contacts__button:hover {
-    color: var(--cor-cinza-escuro);
-    background-color: var(--cor-cinza-claro);
+  color: var(--cor-cinza-escuro);
+  background-color: var(--cor-cinza-claro);
 }
 
-
-
 .card_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card_button button {
-    cursor: pointer;
-    text-align: center;
-    color: var(--cor-cinza-escuro);
-    border: none;
-    font-size: 1rem;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 20px 40px;
-
+  cursor: pointer;
+  text-align: center;
+  color: var(--cor-cinza-escuro);
+  border: none;
+  font-size: 1rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px 40px;
 }
 
-
 .footer {
-    background-color: var(--cor-cinza-claro);
+  background-color: var(--cor-cinza-claro);
 }
 
 .container_footer {
-    box-sizing: border-box;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 0px;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0px;
 }
 
 .container_footer__logo {
-    align-self: center;
-
+  align-self: center;
 }
 
 .container_footer__logo img {
-    width: 400px;
+  width: 400px;
 }
 
 .container_footer__nav {
-    align-self: center;
+  align-self: center;
 }
 
-
 .container_footer__navList {
-    text-align: center;
-    list-style: none;
+  text-align: center;
+  list-style: none;
 }
 
 .container_footer__navList a {
-    font-family: 'Nunito', sans-serif;
-    border: 1px solid var(--cor-cinza-claro);
-    color: var(--cor-cinza-escuro);
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-bottom: 20px;
-
+  font-family: "Nunito", sans-serif;
+  border: 1px solid var(--cor-cinza-claro);
+  color: var(--cor-cinza-escuro);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .container_footer__navList a:hover {
-
-    border: 1px solid var(--cor-cinza-escuro);
+  border: 1px solid var(--cor-cinza-escuro);
 }
-
-
 
 .container_footer__navList li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
-
 
 .container_footer__img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
-
 
 .container_footer__img img {
-    object-fit: cover;
-    width: 150px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    height: 150px;
-
+  object-fit: cover;
+  width: 150px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  height: 150px;
 }
-
 
 .row {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
-
-
-
-
-
 
 .container_footer__infos {
-    color: var(--cor-bege-claro);
-    background-color: var(--cor-cinza-escuro);
-    text-align: center;
-    padding: 20px 0px;
+  color: var(--cor-bege-claro);
+  background-color: var(--cor-cinza-escuro);
+  text-align: center;
+  padding: 20px 0px;
 }
-
 
 .animated {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s, transform 0.5s;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
+@media (max-width: 1400px) {
+  .header_div {
+    justify-content: space-around;
+  }
 
+  .header_nav {
+    justify-content: space-around;
+  }
 
+  .header_banner__div {
+    margin-left: 50px;
+  }
 
+  .header_banner__title {
+    text-align: start;
+  }
 
+  .card_container {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .card_container__cars {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+    height: 550px;
+  }
 
+  .card_container__carsImg,
+  .card_container__carsTitle,
+  .card_container__carsDescription {
+    width: 700px;
+  }
 
+  .card_container__text {
+    margin-right: 50px;
 
-@media(max-width: 1400px) {
+    margin-left: 50px;
+    justify-content: space-around;
+  }
 
-    .header_div {
-        justify-content: space-around;
-    }
-
-    .header_nav {
-        justify-content: space-around;
-    }
-
-    .header_banner__div {
-        margin-left: 50px;
-    }
-
-    .header_banner__title {
-        text-align: start;
-    }
-
-
-    .card_container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card_container__cars {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        width: 700px;
-        height: 550px;
-    }
-
-    .card_container__carsImg,
-    .card_container__carsTitle,
-    .card_container__carsDescription {
-        width: 700px;
-    }
-
-
-    .card_container__text {
-        margin-right: 50px;
-
-        margin-left: 50px;
-        justify-content: space-around;
-    }
-
-
-    .container_footer {
-        flex-direction: column;
-        gap: 30px;
-    }
-
+  .container_footer {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
+@media (max-width: 1000px) {
+  .logo {
+    width: 150px;
+  }
 
+  .header_form__input {
+    display: none;
+  }
 
-
-
-@media(max-width: 1000px) {
-
-
-
-    .logo {
-        width: 150px;
-    }
-
-    .header_form__input {
-        display: none;
-    }
-
-    .header_form__button {
-        display: none;
-    }
+  .header_form__button {
+    display: none;
+  }
 }
-
-
-
-
-
-
 
 /* estilo menu hamburguer */
 @media (max-width: 768px) {
+  .header_div {
+    display: none;
+  }
 
-    .header_div {
-        display: none;
+  .header_nav {
+    justify-content: space-around;
+    position: relative;
+  }
 
-    }
+  .nav_list {
+    display: none;
+  }
 
+  .menu-toggle {
+    margin-left: 100px;
+  }
 
-    .header_nav {
-        justify-content: space-around;
-        position: relative;
-    }
+  .menu-toggle,
+  .menu-toggle2 {
+    display: block;
+    cursor: pointer;
+  }
 
-    .nav_list {
-        display: none;
-    }
+  .menu-toggle2.active {
+    color: var(--cor-bege-claro);
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 
+  .nav_list.active {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 41.15%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url("../src/assets/images/pexels-erik-mclean-5158167.jpg") center / cover
+        no-repeat;
+  }
 
+  .nav_list a {
+    color: aliceblue;
+  }
 
-    .menu-toggle {
-        margin-left: 100px;
-    }
+  .menu-toggle.active {
+    display: none;
+  }
 
-    .menu-toggle,
-    .menu-toggle2 {
+  .menu-toggle {
+    display: initial;
+  }
 
-        display: block;
-        cursor: pointer;
-    }
+  .menu-toggle.active + .nav_list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--cor-cinza-escuro);
+    margin-top: 213.47px;
+    z-index: 999;
+  }
 
+  .menu-toggle {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
 
-    .menu-toggle2.active {
-        color: var(--cor-bege-claro);
-        background: none;
-        border: none;
-        text-align: center;
-        font-size: 1.5rem;
+  .header_banner__div {
+    margin-left: 0;
+    text-align: center;
+  }
 
-    }
+  .header_banner__title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
 
+  .header_banner__paragraph {
+    font-size: 1rem;
+  }
 
-    .nav_list.active {
-        padding: 20px;
-        text-align: center;
-        width: 100%;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 41.15%, rgba(0, 0, 0, 0.5) 100%), url("../src/assets/images/pexels-erik-mclean-5158167.jpg") center / cover no-repeat;
+  .card_container__cars {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 290px;
+  }
 
+  .card_container__carsImg,
+  .card_container__carsTitle,
+  .card_container__carsDescription {
+    width: 300px;
+  }
 
-    }
+  .card_container__carsTitle {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
 
+  .card_container__carsDescription {
+    padding: 0px 10px;
+    font-size: 0.8rem;
+  }
 
+  .card_text__title {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
 
-    .nav_list a {
+  .card_text__paragraph {
+    font-size: 1rem;
+  }
 
-        color: aliceblue;
-    }
+  .card_infos {
+    border-bottom: 2px solid var(--cor-cinza-escuro);
+    border-top: 2px solid var(--cor-cinza-escuro);
+    margin-top: 150px;
+    flex-direction: column;
+  }
 
+  .card_infos__text {
+    border-bottom: 1px solid var(--cor-cinza-escuro);
+  }
 
+  .card_infos__text p {
+    margin-bottom: 10px;
+  }
 
+  .card_contacts__info {
+    position: absolute;
 
+    margin: 0 20px;
+  }
 
-    .menu-toggle.active {
-        display: none;
-    }
+  .card_contacts__text {
+    color: var(--cor-bege-claro);
+    font-size: 2rem;
+  }
 
-    .menu-toggle {
-        display: initial;
-    }
+  .card_contacts__button {
+    position: relative;
+    margin: 0px;
+    font-size: 1rem;
+    padding: 10px;
+  }
 
+  .card_contacts__photo {
+    margin-top: 100px;
+  }
 
-    .menu-toggle.active+.nav_list {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: var(--cor-cinza-escuro);
-        margin-top: 213.47px;
-        z-index: 999;
-
-    }
-
-    .menu-toggle {
-        background: transparent;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-        transition: transform 0.3s;
-    }
-
-
-
-
-
-    .header_banner__div {
-        margin-left: 0;
-        text-align: center;
-    }
-
-
-    .header_banner__title {
-        text-align: center;
-        font-size: 1.5rem;
-    }
-
-    .header_banner__paragraph {
-        font-size: 1rem;
-    }
-
-
-    .card_container__cars {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        width: 300px;
-        height: 290px;
-    }
-
-
-    .card_container__carsImg,
-    .card_container__carsTitle,
-    .card_container__carsDescription {
-
-        width: 300px;
-    }
-
-    .card_container__carsTitle {
-        padding: 5px 10px;
-        font-size: 1rem;
-    }
-
-    .card_container__carsDescription {
-        padding: 0px 10px;
-        font-size: 0.8rem;
-    }
-
-    .card_text__title {
-        margin-top: 30px;
-        font-size: 2rem;
-    }
-
-    .card_text__paragraph {
-        font-size: 1rem;
-    }
-
-    .card_infos {
-        border-bottom: 2px solid var(--cor-cinza-escuro);
-        border-top: 2px solid var(--cor-cinza-escuro);
-        margin-top: 150px;
-        flex-direction: column;
-    }
-
-    .card_infos__text {
-        border-bottom: 1px solid var(--cor-cinza-escuro);
-    }
-
-    .card_infos__text p {
-        margin-bottom: 10px;
-    }
-
-
-    .card_contacts__info {
-        position: absolute;
-
-        margin: 0 20px;
-    }
-
-    .card_contacts__text {
-        color: var(--cor-bege-claro);
-        font-size: 2rem;
-    }
-
-    .card_contacts__button {
-        position: relative;
-        margin: 0px;
-        font-size: 1rem;
-        padding: 10px;
-    }
-
-    .card_contacts__photo {
-        margin-top: 100px;
-    }
-
-    .container_footer__logo img {
-        width: 200px;
-    }
-
-
+  .container_footer__logo img {
+    width: 200px;
+  }
 }

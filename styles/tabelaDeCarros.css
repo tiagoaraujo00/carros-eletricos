@@ -1,43 +1,41 @@
-@import url('color.css');
+@import url("color.css");
 
 body {
-    font-family: 'Nunito', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-
-
 .table-title {
-    color: var(--cor-cinza-escuro);
-    margin-top: 50px;
-    text-align: center;
+  color: var(--cor-cinza-escuro);
+  margin-top: 50px;
+  text-align: center;
 }
 
 .car-table {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    margin-bottom: 50px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 50px;
 }
 
 .table-caption {
-    font-weight: bold;
-    font-size: 1.2em;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
 }
 
 .car-header {
-    background-color: #333;
-    color: #fff;
-    font-weight: bold;
-    text-align: left;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
 }
 
 .car-header,
@@ -46,9 +44,9 @@ body {
 .car-autonomy,
 .car-power,
 .car-acceleration {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 .car-name,
@@ -56,57 +54,54 @@ body {
 .car-autonomy,
 .car-power,
 .car-acceleration {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .car-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .car-table tr:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
-
-
 @media (max-width: 768px) {
+  .car-name {
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-bege-claro);
+  }
 
-    .car-name {
-        background-color: var(--cor-cinza-escuro);
-        color: var(--cor-bege-claro);
-    }
+  .car-table {
+    max-width: 100%;
+  }
 
-    .car-table {
-        max-width: 100%;
-    }
+  .car-table thead {
+    display: none;
+  }
 
-    .car-table thead {
-        display: none;
-    }
+  .car-table tbody {
+    display: block;
+  }
 
-    .car-table tbody {
-        display: block;
-    }
+  .car-table tbody tr {
+    display: block;
+    margin-bottom: 10px;
+  }
 
-    .car-table tbody tr {
-        display: block;
-        margin-bottom: 10px;
-    }
+  .car-table td {
+    display: block;
+    text-align: center;
+  }
 
-    .car-table td {
-        display: block;
-        text-align: center;
-    }
+  .table-title {
+    text-align: center;
+    font-size: 24px;
+  }
 
-    .table-title {
-        text-align: center;
-        font-size: 24px;
-    }
-
-    .car-header {
-        background-color: #333;
-        color: #fff;
-        font-weight: bold;
-        text-align: center;
-    }
+  .car-header {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
 }
