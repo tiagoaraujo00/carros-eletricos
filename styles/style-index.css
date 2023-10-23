@@ -12,7 +12,9 @@
     background-color: var(--cor-bege-claro);
 }
 
-
+a{
+    text-decoration: none;
+}
 
 .header_contacts {
     background-color: var(--cor-cinza-escuro);
