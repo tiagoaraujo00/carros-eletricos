@@ -1,0 +1,50 @@
+@import url('style-index.css');
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+main > h1 {
+    margin: 0 100px 50px 100px;
+}
+
+section > h1 {
+    margin-bottom: 25px;
+}
+
+section > h2 {
+    margin: 25px 0;
+}
+
+section > ol {
+    margin-left: 25px;
+}
+
+#banner{
+    width: 65vw;
+}
+
+.content{
+    margin-top: 50px;
+    width: 65vw;
+}
+
+@media (max-width: 600px) {
+    main{
+        margin: 50px 0;
+    }
+    main > h1 {
+        margin: 0 25px 25px 25px;
+    }
+    .content, #banner{
+        width: 90vw;
+    }
+}

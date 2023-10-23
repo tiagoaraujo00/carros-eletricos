@@ -50,16 +50,16 @@
                 <ul class="nav_list ">
                     <button class="menu-toggle2" id="menuToggle2">X</button>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Carros</a></li>
-                    <li><a href="./pages/tabelaDeCarros.html">Tabela de Carros</a></li>
-                    <li><a href="./pages/contact.html">Contate-nos</a></li>
+                    <li><a href="./src/pages/carros.html">Carros</a></li>
+                    <li><a href="./src/pages/tabelaDeCarros.html">Tabela de Carros</a></li>
+                    <li><a href="./src/pages/contateNos.html">Contate-nos</a></li>
 
                 </ul>
 
                 <form class="header_form">
                     <label for="search"></label>
-                    <input class="header_form__input" name="search" type="text">
-                    <button class="header_form__button"><img src="./src/assets/icons/magnifying-glass-solid.svg"
+                    <input class="header_form__input" name="search" id="search" type="text" placeholder="search">
+                    <button type="button" class="header_form__button"><img src="./src/assets/icons/magnifying-glass-solid.svg"
                             alt="icone de lupa"></button>
                 </form>
             </nav>
@@ -77,28 +77,34 @@
         <article class="card">
             <div class="card_container">
                 <div class="card_container__cars ">
-                    <img class="card_container__carsImg" src="./src/assets/images/2017_ferrari_812_superfast_3-HD.jpg"
+                    <a href="./src/pages/carros.html">
+                        <img class="card_container__carsImg" src="./src/assets/images/2017_ferrari_812_superfast_3-HD.jpg"
                         alt="Foto do carro tesla">
                     <h2 class="card_container__carsTitle">Ferrari F8</h2>
                     <p class="card_container__carsDescription">A Ferrari F8 é um carro esportivo de alto desempenho com
                         um design elegante e um motor V8 potente. </p>
+                    </a>
                 </div>
 
                 <div class="card_container__cars">
-                    <img class="card_container__carsImg" src="./src/assets/images/20160727porschee.jpg"
+                    <a href="./src/pages/carros.html">
+                        <img class="card_container__carsImg" src="./src/assets/images/20160727porschee.jpg"
                         alt="Foto do carro tesla">
                     <h2 class="card_container__carsTitle">Porsche</h2>
                     <p class="card_container__carsDescription">
                         A Porsche é uma renomada fabricante alemã de carros esportivos e de luxo, celebrada por sua
                         precisão de engenharia, desempenho excepcional e design elegante. </p>
+                    </a>
                 </div>
 
                 <div class="card_container__cars">
-                    <img class="card_container__carsImg" src="./src/assets/images/1-jaguarxkxfrontphoto.jpg"
+                    <a href="./src/pages/carros.html">
+                        <img class="card_container__carsImg" src="./src/assets/images/1-jaguarxkxfrontphoto.jpg"
                         alt="Foto do carro tesla">
                     <h2 class="card_container__carsTitle">Jaguar XKX</h2>
                     <p class="card_container__carsDescription">Jaguar é uma marca britânica de carros de luxo e
                         esportivos conhecida por seu design elegante e desempenho excepcional. </p>
+                    </a>
                 </div>
             </div>
         </article>
@@ -187,7 +193,7 @@
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="#">Produtos</a></li>
                         <li><a href="#">Lista</a></li>
-                        <li><a href="#">Contate-nos</a></li>
+                        <li><a href="./src/pages/contateNos.html">Contate-nos</a></li>
                     </ul>
                 </div>
 
